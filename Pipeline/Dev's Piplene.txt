@@ -1,0 +1,31 @@
+Dit zijn de Pipline afspraken voor de game dev's. Naar aanleiding van Pipeline presentatie van school.
+
+Hoe wordt er bepaald welke code er moet worden geschreven?
+Als er code nodig is voor iets, dan zegt de persoon die er achter kwam die zegt dat tegen de andere, daarna wordt er gekeken wie het gaat maken en wie kan helpen.
+
+Waar wordt de code in geschreven?
+C#
+
+Hoe bepaal je of de code goed genoeg is? Waar moet deze aan voldoen?
+De code is goed waneer we het begrijpen, waneer die werkt en waneer het beetje overzichtelijk is.
+
+Hoe zorg je dat de code voor iedereen begrijpelijk is?
+Ook handig is om ff uit te leggen wat stukjes doen met //uitleg.
+
+Wie controleert de code en wanneer wordt dit gedaan?
+De code wordt gecontoleert door een andere game dev die online is. Op het moment dat de persoon denkt dat het goed is om controle te krijgen, aka waneer iemand reageerd.
+
+Hoe deel je de code met elkaar en hoe wordt deze zo nodig samengevoegd in het prototype?
+De code wordt gedeelt via github, branches uitleg kom later in dit te staan.
+
+Hoe wordt er gecontroleerd of de code in het prototype het gewenste effect heeft?
+Als de persoon die het heeft gemaakt kan laten zien dat het werkt dan is het goed en mag het op de main branch.
+
+Hoe controleer je of het prototype nog een goede performance behoud?
+Als het gewoon nog goed werkt.
+
+Hoe gaan jullie om met versiebeheer? Zijn er branches? Hoe houden jullie de commits duidelijk?
+Zie branchesuitleg plaatje :D (die bas heeft/aan het maken heeft/is)
+
+Hoe voorkomen jullie conflicten in je versiebeheer?
+Niet zomaar dingen op de main branch gooien!!!!!!!!
