@@ -1,0 +1,16 @@
+Dit zijn alle (wat ik nu bedacht) wat voor scripts we allemaal moeten maken. Deze gaan we ook verdelen.
+
+money systeem: bas
+enemy AI: simon
+healtbar scripts (met gradient): guido (en bas)
+wave systeem: simon
+menu scripts (game hints) (turret shooting background): Guido
+pauze scherm: guido
+options menu: guido
+save and load: 
+upgarde systeem: 
+level finischt menu (victory en defeat), coins voor upgrade (beloning): 
+in game upgrading towers script: 
+een tower selecteren om te plaatsen SCRIPT: 
+credits: 
+camera scipts: 
