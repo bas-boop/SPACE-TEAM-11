@@ -19,7 +19,7 @@ public class Player_Health : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.M))
         {
-            TakeDamage(20);
+            TakeDamage(19);
         }
 
         if (Input.GetKeyDown(KeyCode.H))
@@ -40,5 +40,10 @@ public class Player_Health : MonoBehaviour
         currentHealth += heal;
 
         healthBar.SetHealth(currentHealth);
+
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
     }
 }
