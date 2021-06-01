@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class enemycode : MonoBehaviour
 {
+    Player_Health PH;
+
     private int damage = 1;
     private int health = 100;
     private float speed = 30;
@@ -26,6 +28,7 @@ public class enemycode : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        PH = GameObject.Find("Player").GetComponent<Player_Health>();
         //waitTime = startwaitTime;
         //spawnAtSpot = Random.Range(0, spawnSpot.Length);
 
@@ -91,7 +94,7 @@ public class enemycode : MonoBehaviour
 
         void Finish(int y)
         {
-            //Player.health-y;
+            PH.TakeDamage(10);
             Debug.Log("-" + y + "hp");
             Destroy(gameObject);
 
