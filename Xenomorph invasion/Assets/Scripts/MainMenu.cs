@@ -14,4 +14,9 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("OptionsMenu");
     }
+
+    public static void ResumeTime()
+    {
+        Time.timeScale = 1f;
+    }
 }

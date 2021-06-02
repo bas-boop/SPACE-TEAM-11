@@ -52,7 +52,7 @@ public class Wavesystem : MonoBehaviour
         if (canSpawn == true && nextSpawnTime < Time.time)
         {
             EnemyCountdown = AllEnemiesList.Count;
-            //Debug.Log(currentWave);
+            Debug.Log(currentWave.waveName);
             SpawnWave();
         }
             

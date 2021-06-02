@@ -6,20 +6,23 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     public static bool GamePaused = false;
+    public static bool OptionsEnabled = false;
     public GameObject pauseMenuScene;
+    public GameObject OptionsMenu;
 
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && OptionsEnabled == false)
         {
-            if (GamePaused)
+            /*if (GamePaused)
             {
                 Resume();
-            }
-            else
+                OptionsMenu;
+            }*/
             {
                 Pause();
+
             }
         }
     }
@@ -29,6 +32,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenuScene.SetActive(false);
         Time.timeScale = 1f;
         GamePaused = false;
+        OptionsEnabled = false;
     }
 
     void Pause()
@@ -36,6 +40,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenuScene.SetActive(true);
         Time.timeScale = 0f;
         GamePaused = true;
+        OptionsEnabled = true;
     }
 
     public void LoadOptions()
