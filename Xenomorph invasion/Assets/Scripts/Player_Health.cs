@@ -9,10 +9,14 @@ public class Player_Health : MonoBehaviour
 
     public HealthBar healthBar;
 
+    public GameObject MF;
+
     public void Start()
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+
+        MF = GameObject.Find("Mission_Failed");
     }
 
     void Update()
@@ -25,6 +29,12 @@ public class Player_Health : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.H))
         {
             Healing(20);
+        }
+
+        if (currentHealth <= 0)
+        {
+            //Debug.Log("missoin failed");
+            MF.gameObject.SetActive(true);
         }
     }
 

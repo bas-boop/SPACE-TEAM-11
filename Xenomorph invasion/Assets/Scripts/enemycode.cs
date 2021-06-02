@@ -95,7 +95,6 @@ public class enemycode : MonoBehaviour
         void Finish(int y)
         {
             PH.TakeDamage(10);
-            Debug.Log("-" + y + "hp");
             Destroy(gameObject);
 
         }
