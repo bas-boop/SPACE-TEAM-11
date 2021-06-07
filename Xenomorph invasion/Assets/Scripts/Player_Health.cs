@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player_Health : MonoBehaviour
 {
@@ -15,8 +17,6 @@ public class Player_Health : MonoBehaviour
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
-
-        MF = GameObject.Find("Mission_Failed");
     }
 
     void Update()
@@ -34,7 +34,7 @@ public class Player_Health : MonoBehaviour
         if (currentHealth <= 0)
         {
             Debug.Log("misson failed");
-            //MF.gameObject.SetActive(true);
+            MF.gameObject.SetActive(true);
         }
     }
 
