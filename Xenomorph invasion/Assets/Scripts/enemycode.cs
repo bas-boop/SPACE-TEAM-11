@@ -7,7 +7,6 @@ using UnityEngine;
 public class enemycode : MonoBehaviour
 {
     Player_Health PH;
-
     private int damage = 1;
     private int health = 100;
     private float speed = 30;
