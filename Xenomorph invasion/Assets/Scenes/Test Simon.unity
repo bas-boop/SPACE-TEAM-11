@@ -910,6 +910,34 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 365405317284120100, guid: dada59bca322ef4449d94d4abc19999f, type: 3}
   m_PrefabInstance: {fileID: 1652864056}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &63268167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63268166}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 666121f3b03c3524f9ecd9bbb85f09ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnSpot: {fileID: 896624140}
+  endPoint: {fileID: 1139223153}
+  movetospots:
+  - {fileID: 2081227078}
+  - {fileID: 2055502741}
+  - {fileID: 558320496}
+  - {fileID: 1860329368}
+  - {fileID: 1616348696}
+  - {fileID: 1747698701}
+  - {fileID: 1548694769}
+  - {fileID: 647352739}
+  - {fileID: 528363422}
+  - {fileID: 1768268284}
+  - {fileID: 1671396205}
+  - {fileID: 841637898}
+  - {fileID: 1140415990}
 --- !u!1 &66405590
 GameObject:
   m_ObjectHideFlags: 0
@@ -4263,7 +4291,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -4314125188185891255, guid: dada59bca322ef4449d94d4abc19999f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: dada59bca322ef4449d94d4abc19999f, type: 3}
 --- !u!1001 &501904915
 PrefabInstance:
@@ -17886,6 +17915,34 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 365405317284120100, guid: dada59bca322ef4449d94d4abc19999f, type: 3}
   m_PrefabInstance: {fileID: 496705714}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2122873301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122873300}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 666121f3b03c3524f9ecd9bbb85f09ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnSpot: {fileID: 896624140}
+  endPoint: {fileID: 1139223153}
+  movetospots:
+  - {fileID: 2081227078}
+  - {fileID: 2055502741}
+  - {fileID: 558320496}
+  - {fileID: 1860329368}
+  - {fileID: 1616348696}
+  - {fileID: 1747698701}
+  - {fileID: 1548694769}
+  - {fileID: 647352739}
+  - {fileID: 528363422}
+  - {fileID: 1768268284}
+  - {fileID: 1671396205}
+  - {fileID: 841637898}
+  - {fileID: 1140415990}
 --- !u!1 &2127331434
 GameObject:
   m_ObjectHideFlags: 0

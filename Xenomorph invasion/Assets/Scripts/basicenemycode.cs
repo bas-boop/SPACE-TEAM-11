@@ -4,9 +4,12 @@ using UnityEngine;
 
 //TO DO: adjusting health, damage and speed for different enemies
 
-public class enemycode : MonoBehaviour
+public class basicenemycode : MonoBehaviour
 {
+    //enemycode1 enemyOne;
+    //enemycode2 enemyTwo;
     Player_Health PH;
+    
     private int damage = 1;
     private int health = 100;
     private float speed = 30;
@@ -24,14 +27,17 @@ public class enemycode : MonoBehaviour
     private int y = 0;
     private int location;
 
+    //public Money money;
+    
     // Start is called before the first frame update
     void Start()
     {
-        PH = GameObject.Find("Player").GetComponent<Player_Health>();
 
+        PH = GameObject.Find("Player").GetComponent<Player_Health>();
         //waitTime = startwaitTime;
         //spawnAtSpot = Random.Range(0, spawnSpot.Length);
 
+        //StartCode();
         if (Vector3.Distance(transform.position, spawnSpot.position) < distanceCheckpoint)
         {
             location = 0;
@@ -54,7 +60,7 @@ public class enemycode : MonoBehaviour
         if (location == index && index<=y)
         {
             currentWave = movetospots[index];
-            transform.position = Vector3.MoveTowards(transform.position, currentWave.position, speed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, currentWave.position, speed  * Time.deltaTime);
 
             if (Vector3.Distance(transform.position, currentWave.position) < distanceCheckpoint)
             {
@@ -92,17 +98,47 @@ public class enemycode : MonoBehaviour
             }
         }
 
-        void Finish(int y)
-        {
-            Debug.Log("DAMAGE");
-            PH.TakeDamage(15);
-            Destroy(gameObject);
-
-        }
         
-
+    }
+    
+    
+    /*void StartCode()
+    {
+        enemyOne = GetComponent<enemycode1>();
+        enemyTwo = GetComponent<enemycode2>();
+        if (enemyOne != null)
+        {
+            enemyOne.GetStats();
+        }
+        else
+        {
+            enemyTwo.GetStats();
+        }
+    }*/
+    void Finish(int y)
+    {
+        //Player.health-y;
+        //Debug.Log("-" + y + "hp");
+        Debug.Log("DAMAGE");
+        //Die();
+        PH.TakeDamage(15);
+        Destroy(gameObject);
     }
 
+    /*public void TakeDamage(int damage)
+    {
+        health -= damage;
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        //money.Increase(worth);
+        Destroy(gameObject);
+    }*/
     /*public void SetSpeed(float s)
     {
         speed = s;
@@ -116,5 +152,10 @@ public class enemycode : MonoBehaviour
     public void SetHealth(int h)
     {
         health = h;
-    }*/
+    }
+
+    /*public void SetWorth(int w)
+    {
+        worth = w;
+    }  */  
 }
