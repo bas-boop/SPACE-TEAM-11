@@ -1470,22 +1470,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 666121f3b03c3524f9ecd9bbb85f09ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnSpot: {fileID: 896624140}
-  endPoint: {fileID: 1139223153}
-  movetospots:
-  - {fileID: 2081227078}
-  - {fileID: 2055502741}
-  - {fileID: 558320496}
-  - {fileID: 1860329368}
-  - {fileID: 1616348696}
-  - {fileID: 1747698701}
-  - {fileID: 1548694769}
-  - {fileID: 647352739}
-  - {fileID: 528363422}
-  - {fileID: 1768268284}
-  - {fileID: 1671396205}
-  - {fileID: 841637898}
-  - {fileID: 1140415990}
 --- !u!4 &64847681 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 089dc0e5c9026334c8bf8b6c89e395bd, type: 3}
@@ -27289,15 +27273,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8452218243229140234, guid: 86bbafd2d149f9f4da6ee3998029783f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8452218243564382405, guid: 86bbafd2d149f9f4da6ee3998029783f, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8452218243564382405, guid: 86bbafd2d149f9f4da6ee3998029783f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86bbafd2d149f9f4da6ee3998029783f, type: 3}
@@ -37446,22 +37430,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 666121f3b03c3524f9ecd9bbb85f09ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnSpot: {fileID: 896624140}
-  endPoint: {fileID: 1139223153}
-  movetospots:
-  - {fileID: 2081227078}
-  - {fileID: 2055502741}
-  - {fileID: 558320496}
-  - {fileID: 1860329368}
-  - {fileID: 1616348696}
-  - {fileID: 1747698701}
-  - {fileID: 1548694769}
-  - {fileID: 647352739}
-  - {fileID: 528363422}
-  - {fileID: 1768268284}
-  - {fileID: 1671396205}
-  - {fileID: 841637898}
-  - {fileID: 1140415990}
 --- !u!4 &2123378339 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6b351c3d6548c44449307cbf69d49f3c, type: 3}
