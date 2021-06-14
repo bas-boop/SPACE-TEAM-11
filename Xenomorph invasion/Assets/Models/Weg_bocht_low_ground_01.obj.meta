@@ -1,9 +1,24 @@
 fileFormatVersion: 2
-guid: 01b25b1e805e03d428b701da9fd5e5d3
+guid: 7603f17821de08e4b98a72c6ebe0ea90
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CubeMat
+    second: {fileID: 2100000, guid: ca702afc30f1ceb4d94095e48bd659f3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.1
+    second: {fileID: 2100000, guid: ca702afc30f1ceb4d94095e48bd659f3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tile2.0Mat
+    second: {fileID: 2100000, guid: ca702afc30f1ceb4d94095e48bd659f3, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
