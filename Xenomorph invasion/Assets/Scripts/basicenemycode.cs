@@ -9,10 +9,12 @@ public class basicenemycode : MonoBehaviour
     //enemycode1 enemyOne;
     //enemycode2 enemyTwo;
     Player_Health PH;
+    Money money;
     
     private int damage = 1;
     private int health = 100;
-    private float speed = 6f;
+    private float speed = 15f;
+    private int worth = 10;
     //private float waitTime;
     //private float startwaitTime = 5;
     private float distanceCheckpoint = 0.005f;
@@ -26,8 +28,6 @@ public class basicenemycode : MonoBehaviour
     private int index = 0;
     private int y = 0;
     private int location;
-
-    //public Money money;
     
     // Start is called before the first frame update
     void Start()
@@ -128,10 +128,10 @@ public class basicenemycode : MonoBehaviour
     }*/
     void Finish(int y)
     {
-        //Player.health-y;
+        PH.TakeDamage(y);
         Debug.Log("-" + y + "hp");
         Die();
-        //PH.TakeDamage(15);
+        
     }
 
     public void EnemyTakeDamage(int y)
@@ -145,7 +145,7 @@ public class basicenemycode : MonoBehaviour
 
     void Die()
     {
-        //money.Increase(worth);
+        money.Increase(worth);
         Destroy(gameObject);
     }
     /*public void SetSpeed(float s)

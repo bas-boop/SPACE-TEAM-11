@@ -557,11 +557,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2323412360091524562, guid: 5d57f4f7bcbf5694b8fa6e2b5a8a469f, type: 3}
   m_PrefabInstance: {fileID: 43677430}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &49116704 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 365405317284120100, guid: dada59bca322ef4449d94d4abc19999f, type: 3}
-  m_PrefabInstance: {fileID: 1652864056}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &61576107
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3793,7 +3788,7 @@ GameObject:
   - component: {fileID: 528363422}
   m_Layer: 0
   m_Name: MoveTo1 (8)
-  m_TagString: Untagged
+  m_TagString: MoveToRight
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3885,7 +3880,7 @@ GameObject:
   - component: {fileID: 558320496}
   m_Layer: 0
   m_Name: MoveTo1 (2)
-  m_TagString: Untagged
+  m_TagString: MoveToRight
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4705,7 +4700,7 @@ GameObject:
   - component: {fileID: 647352739}
   m_Layer: 0
   m_Name: MoveTo1 (7)
-  m_TagString: Untagged
+  m_TagString: MoveToRight
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5877,10 +5872,20 @@ MonoBehaviour:
   - waveName: Dikke Wave 1
     DifferentEnemies:
     - spawnenemy: {fileID: 2122873300}
-      noOfEnemies: 30
-    - spawnenemy: {fileID: 49116704}
-      noOfEnemies: 30
-    spawnInterval: 0.5
+      noOfEnemies: 1
+    - spawnenemy: {fileID: 2122873300}
+      noOfEnemies: 2
+    spawnInterval: 3
+  - waveName: Dikke Wave 1
+    DifferentEnemies:
+    - spawnenemy: {fileID: 2122873300}
+      noOfEnemies: 3
+    spawnInterval: 3
+  - waveName: Dikke Wave 1
+    DifferentEnemies:
+    - spawnenemy: {fileID: 2122873300}
+      noOfEnemies: 4
+    spawnInterval: 3
   spawnPoint: {fileID: 896624140}
 --- !u!4 &809034084
 Transform:
@@ -8625,7 +8630,7 @@ GameObject:
   - component: {fileID: 1140415990}
   m_Layer: 0
   m_Name: MoveTo1 (12)
-  m_TagString: Untagged
+  m_TagString: MoveToRight
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11458,7 +11463,7 @@ GameObject:
   - component: {fileID: 1548694769}
   m_Layer: 0
   m_Name: MoveTo1 (6)
-  m_TagString: Untagged
+  m_TagString: MoveToRight
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12904,7 +12909,7 @@ GameObject:
   - component: {fileID: 1747698701}
   m_Layer: 0
   m_Name: MoveTo1 (5)
-  m_TagString: Untagged
+  m_TagString: MoveToRight
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14858,7 +14863,7 @@ GameObject:
   - component: {fileID: 2081227078}
   m_Layer: 0
   m_Name: MoveTo1
-  m_TagString: Untagged
+  m_TagString: MoveToRight
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

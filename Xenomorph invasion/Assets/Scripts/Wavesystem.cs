@@ -51,12 +51,17 @@ public class Wavesystem : MonoBehaviour
         
         if (canSpawn == true && nextSpawnTime < Time.time)
         {
-            EnemyCountdown = AllEnemiesList.Count;
             Debug.Log(currentWave.waveName);
             SpawnWave();
         }
             
         GameObject[] totalEnemies = GameObject.FindGameObjectsWithTag("Enemy");
+
+        if (totalEnemies.Length == y && waves.Length == currentWaveNumber + 1)
+        {
+            Debug.Log("Level klaar");
+        }
+
         if (totalEnemies.Length == y && canSpawn == false && currentWaveNumber + 1 != waves.Length)
         {
             currentWaveNumber++;
@@ -73,11 +78,15 @@ public class Wavesystem : MonoBehaviour
             CreateAllEnemyList();
             createdList = true;
         }
-        EnemyCountdown--;
+        EnemyCountdown = AllEnemiesList.Count;
+        Debug.Log(EnemyCountdown);
+
+
         nextSpawnTime = Time.time + currentWave.spawnInterval;
         GameObject enemy = Instantiate(GetRandomEnemy(), spawnPoint.position, transform.rotation);
         enemy.GetComponent<basicenemycode>().enabled = true;
-        if (EnemyCountdown <= 0)
+        EnemyCountdown--;
+        if (EnemyCountdown == 0)
         {
             canSpawn = false;
         }
