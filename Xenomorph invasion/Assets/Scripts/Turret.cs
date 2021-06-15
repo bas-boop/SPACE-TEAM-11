@@ -8,7 +8,7 @@ public class Turret : MonoBehaviour
     [Header("Attributes")]
 
     private float range = 30f;
-    private float fireRate = 6f;
+    private float fireRate = 2f;
     private float fireCountdown = 0f;
     
     [Header("Unity Setup Fields")]
@@ -16,7 +16,7 @@ public class Turret : MonoBehaviour
     private string enemyTag = "Enemy";
 
     public Transform partToRotate;
-    private float turnSpeed = 8f;
+    private float turnSpeed = 10f;
 
     public GameObject bulletPrefab;
     public Transform firepoint;

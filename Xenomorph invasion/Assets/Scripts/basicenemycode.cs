@@ -12,7 +12,7 @@ public class basicenemycode : MonoBehaviour
     
     private int damage = 1;
     private int health = 100;
-    private float speed = 40f;
+    private float speed = 6f;
     //private float waitTime;
     //private float startwaitTime = 5;
     private float distanceCheckpoint = 0.005f;
@@ -64,6 +64,17 @@ public class basicenemycode : MonoBehaviour
 
             if (Vector3.Distance(transform.position, currentWave.position) < distanceCheckpoint)
             {
+                if (currentWave.tag == "MoveToRight")
+                {
+                    Debug.Log("Turn Right");
+                    transform.rotation *= Quaternion.Euler(0, 90, 0);
+                }
+                else
+                {
+                    Debug.Log("Turn Left");
+                    transform.rotation *= Quaternion.Euler(0, -90, 0);
+                }
+
                 /*if (waitTime <= 0)
                 {
                     waitTime = startwaitTime;

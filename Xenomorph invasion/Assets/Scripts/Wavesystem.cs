@@ -77,7 +77,7 @@ public class Wavesystem : MonoBehaviour
         nextSpawnTime = Time.time + currentWave.spawnInterval;
         GameObject enemy = Instantiate(GetRandomEnemy(), spawnPoint.position, transform.rotation);
         enemy.GetComponent<basicenemycode>().enabled = true;
-        if (EnemyCountdown == 0)
+        if (EnemyCountdown <= 0)
         {
             canSpawn = false;
         }
