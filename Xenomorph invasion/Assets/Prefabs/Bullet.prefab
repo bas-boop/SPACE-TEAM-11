@@ -57,6 +57,8 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -81,6 +83,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &212992627707600132
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -122,6 +125,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17e78324525150a468e9241f434375d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 40
-  dir: {x: 0, y: 0, z: 0}
-  speed: 0
+  speed: 10

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.04028312, g: 0.5779855, b: 0.5935314, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -922,22 +922,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 666121f3b03c3524f9ecd9bbb85f09ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnSpot: {fileID: 896624140}
-  endPoint: {fileID: 1139223153}
-  movetospots:
-  - {fileID: 2081227078}
-  - {fileID: 2055502741}
-  - {fileID: 558320496}
-  - {fileID: 1860329368}
-  - {fileID: 1616348696}
-  - {fileID: 1747698701}
-  - {fileID: 1548694769}
-  - {fileID: 647352739}
-  - {fileID: 528363422}
-  - {fileID: 1768268284}
-  - {fileID: 1671396205}
-  - {fileID: 841637898}
-  - {fileID: 1140415990}
 --- !u!1 &66405590
 GameObject:
   m_ObjectHideFlags: 0
@@ -17924,7 +17908,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2122873300}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 666121f3b03c3524f9ecd9bbb85f09ca, type: 3}
+  m_Script: {fileID: 11500000, guid: d402db79c046a5e489372bf3fb809067, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spawnSpot: {fileID: 896624140}
