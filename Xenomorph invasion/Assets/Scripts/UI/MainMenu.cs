@@ -9,14 +9,20 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Test Simon");
     }
-
+    
     public static void CallOptions()
     {
         SceneManager.LoadScene("OptionsMenu");
     }
 
-    public static void ResumeTime()
+    public void ResumeTime()
     {
         Time.timeScale = 1f;
+        GetComponent<PauseMenu>().OptionsEnabled = false;
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 }

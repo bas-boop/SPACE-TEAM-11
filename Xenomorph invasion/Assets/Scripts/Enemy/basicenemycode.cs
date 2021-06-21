@@ -11,7 +11,7 @@ public class basicenemycode : MonoBehaviour
     Player_Health PH;
     
     private int damage = 1;
-    private int health = 100;
+    public int health = 100;
     private float speed = 30;
     //private float waitTime;
     //private float startwaitTime = 5;
