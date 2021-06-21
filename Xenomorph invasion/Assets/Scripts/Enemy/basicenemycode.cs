@@ -11,8 +11,13 @@ public class basicenemycode : MonoBehaviour
     Player_Health PH;
     
     private int damage = 1;
+<<<<<<< HEAD:Xenomorph invasion/Assets/Scripts/Enemy/basicenemycode.cs
     public int health = 100;
     private float speed = 30;
+=======
+    private int health = 100;
+    private float speed = 40f;
+>>>>>>> 6312653fafc5c69825efc1c44073bdfc1a8842c1:Xenomorph invasion/Assets/Scripts/basicenemycode.cs
     //private float waitTime;
     //private float startwaitTime = 5;
     private float distanceCheckpoint = 0.005f;
@@ -33,7 +38,7 @@ public class basicenemycode : MonoBehaviour
     void Start()
     {
 
-        PH = GameObject.Find("Player").GetComponent<Player_Health>();
+        //PH = GameObject.Find("Player").GetComponent<Player_Health>();
         //waitTime = startwaitTime;
         //spawnAtSpot = Random.Range(0, spawnSpot.Length);
 
@@ -118,16 +123,14 @@ public class basicenemycode : MonoBehaviour
     void Finish(int y)
     {
         //Player.health-y;
-        //Debug.Log("-" + y + "hp");
-        Debug.Log("DAMAGE");
-        //Die();
-        PH.TakeDamage(15);
-        Destroy(gameObject);
+        Debug.Log("-" + y + "hp");
+        Die();
+        //PH.TakeDamage(15);
     }
 
-    /*public void TakeDamage(int damage)
+    public void EnemyTakeDamage(int y)
     {
-        health -= damage;
+        health -= y;
         if (health <= 0)
         {
             Die();
@@ -138,7 +141,7 @@ public class basicenemycode : MonoBehaviour
     {
         //money.Increase(worth);
         Destroy(gameObject);
-    }*/
+    }
     /*public void SetSpeed(float s)
     {
         speed = s;
