@@ -15,6 +15,9 @@ public class Turret : MonoBehaviour
 
     [Header("Use Laser")]
     public bool useLaser = false;
+
+    public int damageOvertime = 30;
+
     public LineRenderer lineRenderer;
 
     [Header("Unity Setup Fields")]
@@ -100,6 +103,8 @@ public class Turret : MonoBehaviour
     {
         if (!lineRenderer.enabled)
         {
+            //target.GetComponent<EnemyGroup>().TakeDamage(damageOvertime * Time.deltaTime);
+
             lineRenderer.enabled = true;
         }
 
