@@ -414,23 +414,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 40875882}
   m_CullTransparentMesh: 0
---- !u!1 &63268166 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 365405317284120100, guid: dada59bca322ef4449d94d4abc19999f, type: 3}
-  m_PrefabInstance: {fileID: 1652864056}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &63268167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 63268166}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 666121f3b03c3524f9ecd9bbb85f09ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &66405590
 GameObject:
   m_ObjectHideFlags: 0
@@ -2579,27 +2562,27 @@ MonoBehaviour:
     DifferentEnemies:
     - spawnenemy: {fileID: 2122873300}
       noOfEnemies: 3
-    - spawnenemy: {fileID: 63268166}
+    - spawnenemy: {fileID: 0}
       noOfEnemies: 5
     - spawnenemy: {fileID: 2122873300}
       noOfEnemies: 4
-    - spawnenemy: {fileID: 63268166}
+    - spawnenemy: {fileID: 0}
       noOfEnemies: 7
     spawnInterval: 1
   - waveName: Wave 2
     DifferentEnemies:
     - spawnenemy: {fileID: 2122873300}
       noOfEnemies: 6
-    - spawnenemy: {fileID: 63268166}
+    - spawnenemy: {fileID: 0}
       noOfEnemies: 2
-    - spawnenemy: {fileID: 63268166}
+    - spawnenemy: {fileID: 0}
       noOfEnemies: 2
     spawnInterval: 2
   - waveName: Wave 3
     DifferentEnemies:
     - spawnenemy: {fileID: 2122873300}
       noOfEnemies: 10
-    - spawnenemy: {fileID: 63268166}
+    - spawnenemy: {fileID: 0}
       noOfEnemies: 50
     spawnInterval: 0.1
   spawnPoint: {fileID: 896624140}
@@ -4943,9 +4926,13 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -4314125188185891255, guid: dada59bca322ef4449d94d4abc19999f, type: 3}
-      propertyPath: movetospots.Array.size
-      value: 13
-      objectReference: {fileID: 0}
+      propertyPath: spawnSpot
+      value: 
+      objectReference: {fileID: 896624140}
+    - target: {fileID: -4314125188185891255, guid: dada59bca322ef4449d94d4abc19999f, type: 3}
+      propertyPath: endPoint
+      value: 
+      objectReference: {fileID: 1139223153}
     - target: {fileID: -4314125188185891255, guid: dada59bca322ef4449d94d4abc19999f, type: 3}
       propertyPath: movetospots.Array.data[0]
       value: 
@@ -4998,29 +4985,9 @@ PrefabInstance:
       propertyPath: movetospots.Array.data[12]
       value: 
       objectReference: {fileID: 1140415990}
-    - target: {fileID: -4314125188185891255, guid: dada59bca322ef4449d94d4abc19999f, type: 3}
-      propertyPath: spawnSpot
-      value: 
-      objectReference: {fileID: 896624140}
-    - target: {fileID: -4314125188185891255, guid: dada59bca322ef4449d94d4abc19999f, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4314125188185891255, guid: dada59bca322ef4449d94d4abc19999f, type: 3}
-      propertyPath: endPoint
-      value: 
-      objectReference: {fileID: 1139223153}
-    - target: {fileID: 131511219517021022, guid: dada59bca322ef4449d94d4abc19999f, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 91d7c9c0feed0c448bb5d2d5d323fb08, type: 2}
     - target: {fileID: 365405317284120100, guid: dada59bca322ef4449d94d4abc19999f, type: 3}
       propertyPath: m_Name
       value: Enemy (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 365405317284120100, guid: dada59bca322ef4449d94d4abc19999f, type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 2879013102361960493, guid: dada59bca322ef4449d94d4abc19999f, type: 3}
       propertyPath: m_LocalPosition.x
