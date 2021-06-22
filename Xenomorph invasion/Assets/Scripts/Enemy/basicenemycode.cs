@@ -11,13 +11,10 @@ public class basicenemycode : MonoBehaviour
     Player_Health PH;
     
     private int damage = 1;
-<<<<<<< HEAD:Xenomorph invasion/Assets/Scripts/Enemy/basicenemycode.cs
+
     public int health = 100;
     private float speed = 30;
-=======
-    private int health = 100;
-    private float speed = 40f;
->>>>>>> 6312653fafc5c69825efc1c44073bdfc1a8842c1:Xenomorph invasion/Assets/Scripts/basicenemycode.cs
+
     //private float waitTime;
     //private float startwaitTime = 5;
     private float distanceCheckpoint = 0.005f;
