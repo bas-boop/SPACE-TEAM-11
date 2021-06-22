@@ -11,7 +11,7 @@ public class basicenemycode : MonoBehaviour
     Player_Health PH;
     
     private int damage = 1;
-    private int health = 100;
+    private float health = 100;
     private float speed = 40f;
     //private float waitTime;
     //private float startwaitTime = 5;
@@ -123,7 +123,7 @@ public class basicenemycode : MonoBehaviour
         //PH.TakeDamage(15);
     }
 
-    public void EnemyTakeDamage(int y)
+    public void TakeDamage(float y)
     {
         health -= y;
         if (health <= 0)
@@ -137,23 +137,4 @@ public class basicenemycode : MonoBehaviour
         //money.Increase(worth);
         Destroy(gameObject);
     }
-    /*public void SetSpeed(float s)
-    {
-        speed = s;
-    }
-
-    public void SetDamage(int d)
-    {
-        damage = d;
-    }
-
-    public void SetHealth(int h)
-    {
-        health = h;
-    }
-
-    /*public void SetWorth(int w)
-    {
-        worth = w;
-    }  */  
 }

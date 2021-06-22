@@ -4,6 +4,7 @@ using System.Collections;
 public class Turret : MonoBehaviour
 {
     private Transform target;
+    private basicenemycode targetEnemy;
 
     [Header("General")]
     public float range = 30f;
@@ -48,6 +49,7 @@ public class Turret : MonoBehaviour
         if (nearestEnemy != null && shortestDistance <= range)
         {
             target = nearestEnemy.transform;
+            targetEnemy = nearestEnemy.GetComponent<basicenemycode>();
         }
         else
         {
@@ -98,6 +100,8 @@ public class Turret : MonoBehaviour
 
     void Laser()
     {
+        targetEnemy.TakeDamage(30);
+
         if (!lineRenderer.enabled)
         {
             lineRenderer.enabled = true;
