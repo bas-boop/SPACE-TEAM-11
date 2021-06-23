@@ -1,0 +1,5 @@
+sceneSetups:
+- path: Assets/cubespawner.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0

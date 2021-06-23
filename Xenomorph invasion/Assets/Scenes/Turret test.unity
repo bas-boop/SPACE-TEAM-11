@@ -12314,6 +12314,10 @@ PrefabInstance:
       propertyPath: speed
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: -4314125188185891255, guid: dada59bca322ef4449d94d4abc19999f, type: 3}
+      propertyPath: movetospots.Array.data[13]
+      value: 
+      objectReference: {fileID: 390705593}
     - target: {fileID: 131511219517021022, guid: dada59bca322ef4449d94d4abc19999f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 

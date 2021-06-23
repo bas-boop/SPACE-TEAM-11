@@ -11,10 +11,10 @@ public class basicenemycode : MonoBehaviour
     Player_Health PH;
     Money money;
     
-    private int damage = 1;
-    private int health = 100;
-    private float speed = 15f;
-    private int worth = 10;
+    public int damage = 1;
+    public int health = 100;
+    public float speed = 15f;
+    public int worth = 10;
     //private float waitTime;
     //private float startwaitTime = 5;
     private float distanceCheckpoint = 0.005f;
@@ -33,7 +33,7 @@ public class basicenemycode : MonoBehaviour
     void Start()
     {
 
-        //PH = GameObject.Find("Player").GetComponent<Player_Health>();
+        PH = GameObject.Find("Player").GetComponent<Player_Health>();
         //waitTime = startwaitTime;
         //spawnAtSpot = Random.Range(0, spawnSpot.Length);
 
