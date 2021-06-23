@@ -33,7 +33,7 @@ public class basicenemycode : MonoBehaviour
     void Start()
     {
 
-        //PH = GameObject.Find("Player").GetComponent<Player_Health>();
+        PH = GameObject.Find("Player").GetComponent<Player_Health>();
         //waitTime = startwaitTime;
         //spawnAtSpot = Random.Range(0, spawnSpot.Length);
 
@@ -120,7 +120,7 @@ public class basicenemycode : MonoBehaviour
         //Player.health-y;
         Debug.Log("-" + y + "hp");
         Die();
-        //PH.TakeDamage(15);
+        PH.TakeDamage(15);
     }
 
     public void TakeDamage(float y)

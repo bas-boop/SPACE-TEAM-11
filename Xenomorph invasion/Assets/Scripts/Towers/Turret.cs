@@ -100,7 +100,7 @@ public class Turret : MonoBehaviour
 
     void Laser()
     {
-        targetEnemy.TakeDamage(30);
+        targetEnemy.TakeDamage(1);
 
         if (!lineRenderer.enabled)
         {
