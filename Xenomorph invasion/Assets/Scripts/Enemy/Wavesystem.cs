@@ -24,12 +24,12 @@ public class Wavesystem : MonoBehaviour
     public Wave[] waves;
     public Transform spawnPoint;
 
-    private Wave currentWave;
-    private int currentWaveNumber;
+    public Wave currentWave;
+    public int currentWaveNumber;
     private float nextSpawnTime;
 
     private bool createdList = false;
-    private bool canSpawn;
+    public bool canSpawn;
     private int y;
     
     private int EnemyCountdown;
@@ -63,6 +63,16 @@ public class Wavesystem : MonoBehaviour
             canSpawn = true;
             createdList = false;
         }
+
+        if (currentWaveNumber.Equals(3))
+        {
+            GetComponent<Player_Health>().MC.gameObject.SetActive(true);
+        }
+
+        /*if(AllEnemiesList.Count == 0 && GameObject.("Player").GetComponent<Player_Health>() >= 0)
+        {
+
+        }*/
     }
 
     

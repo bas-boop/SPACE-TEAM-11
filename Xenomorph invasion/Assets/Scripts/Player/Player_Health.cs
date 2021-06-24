@@ -12,6 +12,7 @@ public class Player_Health : MonoBehaviour
     public HealthBar healthBar;
 
     public GameObject MF;
+    public GameObject MC;
 
     public void Start()
     {
@@ -36,6 +37,12 @@ public class Player_Health : MonoBehaviour
             Debug.Log("misson failed");
             MF.gameObject.SetActive(true);
         }
+
+        /*if (currentHealth <= 0)
+        {
+            Debug.Log("mission complete");
+            MC.gameObject.SetActive(true);
+        }*/
     }
 
     public void TakeDamage(int damage)

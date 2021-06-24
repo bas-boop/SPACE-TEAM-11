@@ -123,6 +123,7 @@ public class basicenemycode : MonoBehaviour
         Debug.Log("-" + y + "hp");
         Die();
         //PH.TakeDamage(15);
+        GameObject.Find("Player").GetComponent<Player_Health>().TakeDamage(y);
     }
 
     public void EnemyTakeDamage(int y)
