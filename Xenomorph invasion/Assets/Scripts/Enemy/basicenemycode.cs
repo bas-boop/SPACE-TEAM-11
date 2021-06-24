@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//TO DO: adjusting health, damage and speed for different enemies
-
 public class basicenemycode : MonoBehaviour
 {
     //enemycode1 enemyOne;
@@ -11,7 +9,6 @@ public class basicenemycode : MonoBehaviour
     Player_Health PH;
     
     private int damage = 1;
-
     public int health = 100;
     private float speed = 30;
 
@@ -35,7 +32,7 @@ public class basicenemycode : MonoBehaviour
     void Start()
     {
 
-        //PH = GameObject.Find("Player").GetComponent<Player_Health>();
+        PH = GameObject.Find("Player").GetComponent<Player_Health>();
         //waitTime = startwaitTime;
         //spawnAtSpot = Random.Range(0, spawnSpot.Length);
 
@@ -122,11 +119,11 @@ public class basicenemycode : MonoBehaviour
         //Player.health-y;
         Debug.Log("-" + y + "hp");
         Die();
-        //PH.TakeDamage(15);
         GameObject.Find("Player").GetComponent<Player_Health>().TakeDamage(y);
+        PH.TakeDamage(15);
     }
 
-    public void EnemyTakeDamage(int y)
+    public void TakeDamage(int y)
     {
         health -= y;
         if (health <= 0)
@@ -140,23 +137,4 @@ public class basicenemycode : MonoBehaviour
         //money.Increase(worth);
         Destroy(gameObject);
     }
-    /*public void SetSpeed(float s)
-    {
-        speed = s;
-    }
-
-    public void SetDamage(int d)
-    {
-        damage = d;
-    }
-
-    public void SetHealth(int h)
-    {
-        health = h;
-    }
-
-    /*public void SetWorth(int w)
-    {
-        worth = w;
-    }  */  
 }
