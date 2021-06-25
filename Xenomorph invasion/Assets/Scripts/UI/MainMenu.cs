@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene("Test Simon");
+        SceneManager.LoadScene("Level 0.1");
     }
     
     public static void CallOptions()

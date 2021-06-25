@@ -24,8 +24,12 @@ public class Node : MonoBehaviour
             return;
         }
 
-        GameObject turretToBuild = BuildManger.instance.GetTurretToBuild();
-        turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset, transform.rotation);
+
+        if (GameObject.Find("Player").GetComponent<ToggleBuildOff>().codeIsOn == true)
+        {
+            GameObject turretToBuild = BuildManger.instance.GetTurretToBuild();
+            turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset, transform.rotation);
+        }
     }
 
     void OnMouseEnter()

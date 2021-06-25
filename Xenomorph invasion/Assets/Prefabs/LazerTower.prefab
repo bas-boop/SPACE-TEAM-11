@@ -2139,14 +2139,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc069d9b30333364a805d83177f365e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 40
+  range: 25
   bulletPrefab: {fileID: 0}
   fireRate: 1
   useLaser: 1
   lineRenderer: {fileID: 4079633203459844352}
   enemyTag: Enemy
   partToRotate: {fileID: 6851472081930450159}
-  turnSpeed: 14
+  turnSpeed: 20
   firepoint: {fileID: 6851472081956104179}
 --- !u!120 &4079633203459844352
 LineRenderer:

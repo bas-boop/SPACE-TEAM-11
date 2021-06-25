@@ -7,6 +7,6 @@ public class OptionMenuGame : MonoBehaviour
 {
     public void BackToGame()
     {
-        SceneManager.LoadScene("Test Simon");
+        SceneManager.LoadScene("Level 0.1");
     }
 }

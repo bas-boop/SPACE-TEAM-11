@@ -7,11 +7,11 @@ public class Turret : MonoBehaviour
     private basicenemycode targetEnemy;
 
     [Header("General")]
-    public float range = 30f;
+    public float range = 25f;
 
     [Header("Use Bullets (deafault)")]
     public GameObject bulletPrefab;
-    public float fireRate = 6f;
+    public float fireRate = 0f;
     private float fireCountdown = 0f;
 
     [Header("Use Laser")]
@@ -21,7 +21,7 @@ public class Turret : MonoBehaviour
     [Header("Unity Setup Fields")]
     public string enemyTag = "Enemy";
     public Transform partToRotate;
-    public float turnSpeed = 8f;
+    public float turnSpeed = 20f;
     public Transform firepoint;
 
 

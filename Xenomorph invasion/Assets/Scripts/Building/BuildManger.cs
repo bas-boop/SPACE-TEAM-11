@@ -21,10 +21,18 @@ public class BuildManger : MonoBehaviour
         turretToBuild = standardTurretPrefab;
     }
 
+
     private GameObject turretToBuild;
 
-    public GameObject GetTurretToBuild ()
+    public GameObject GetTurretToBuild()
     {
         return turretToBuild;
+    }
+
+
+
+    public void Update()
+    {
+        GetComponent<ToggleBuildOff>().codeIsOn = true;
     }
 }

@@ -9,7 +9,12 @@ public class PauseMenu : MonoBehaviour
     public bool OptionsEnabled = false;
     public GameObject pauseMenuScene;
     public GameObject OptionsMenu;
+    //private Component buildcodething;
 
+    /*void Start()
+    {
+        buildcodething = GetComponent<Component>();
+    }*/
 
     private void Update()
     {
@@ -22,7 +27,7 @@ public class PauseMenu : MonoBehaviour
             }*/
             {
                 Pause();
-
+                //buildcodething.GetComponent<BuildManger>().enabled = (false);
             }
         }
     }
