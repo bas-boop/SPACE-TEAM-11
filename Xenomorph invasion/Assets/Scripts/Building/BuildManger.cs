@@ -29,9 +29,7 @@ public class BuildManger : MonoBehaviour
         return turretToBuild;
     }
 
-
-
-    public void Update()
+    public void SetBuildOn()
     {
         GetComponent<ToggleBuildOff>().codeIsOn = true;
     }

@@ -7685,7 +7685,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 4061185253891321858}
         m_TargetAssemblyTypeName: BuildManger, Assembly-CSharp
-        m_MethodName: Update
+        m_MethodName: SetBuildOn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14092,7 +14092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c2c1beab37712d45a2312cf22a51164, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  codeIsOn: 1
+  codeIsOn: 0
 --- !u!114 &4061185253891321861
 MonoBehaviour:
   m_ObjectHideFlags: 0
