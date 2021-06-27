@@ -64,9 +64,9 @@ public class Wavesystem : MonoBehaviour
             createdList = false;
         }
 
-        if (currentWaveNumber.Equals(3))
+        if (currentWaveNumber.Equals(GetComponent<Wavesystem>().waves.Length - 1))
         {
-            GetComponent<Player_Health>().MC.gameObject.SetActive(true);
+            GameObject.Find("Player").GetComponent<Player_Health>().MC.gameObject.SetActive(true);
         }
 
         /*if(AllEnemiesList.Count == 0 && GameObject.("Player").GetComponent<Player_Health>() >= 0)

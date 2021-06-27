@@ -9,7 +9,7 @@ public class basicenemycode : MonoBehaviour
     Player_Health PH;
     
     private int damage = 1;
-    public int health = 100;
+    public int health = 0;
     private float speed = 30;
 
     //private float waitTime;
@@ -60,6 +60,7 @@ public class basicenemycode : MonoBehaviour
         {
             currentWave = movetospots[index];
             transform.position = Vector3.MoveTowards(transform.position, currentWave.position, speed  * Time.deltaTime);
+            transform.LookAt(currentWave.position);
 
             if (Vector3.Distance(transform.position, currentWave.position) < distanceCheckpoint)
             {
@@ -120,7 +121,7 @@ public class basicenemycode : MonoBehaviour
         Debug.Log("-" + y + "hp");
         Die();
         GameObject.Find("Player").GetComponent<Player_Health>().TakeDamage(y);
-        PH.TakeDamage(15);
+        PH.TakeDamage(1);
     }
 
     public void TakeDamage(int y)
