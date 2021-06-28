@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class FullscreenToggle : MonoBehaviour
 {
-    public void Fullscreen(bool fullscreen)
+    public void Fullscreenon(bool Fullon)
     {
-        Screen.fullScreen = fullscreen;
-        Debug.Log("ooga");
+        Screen.fullScreen = Fullon;
+        Debug.Log("im uhh somethign on?");
+    }
+    public void Fullscreenoff(bool Fulloff)
+    {
+        Screen.fullScreen = !Fulloff;
+        Debug.Log("im uhh somethign off?");
     }
 }

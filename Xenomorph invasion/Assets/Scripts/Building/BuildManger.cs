@@ -31,6 +31,7 @@ public class BuildManger : MonoBehaviour
 
     public void SetBuildOn()
     {
+        //if ()
         GetComponent<ToggleBuildOff>().codeIsOn = true;
     }
 }

@@ -133,7 +133,7 @@ public class basicenemycode : MonoBehaviour
         }
     }
 
-    void Die()
+    public void Die()
     {
         //money.Increase(worth);
         Destroy(gameObject);

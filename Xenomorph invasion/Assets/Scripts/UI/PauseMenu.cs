@@ -8,7 +8,6 @@ public class PauseMenu : MonoBehaviour
     public static bool GamePaused = false;
     public bool OptionsEnabled = false;
     public GameObject pauseMenuScene;
-    public GameObject OptionsMenu;
     //private Component buildcodething;
 
     /*void Start()
