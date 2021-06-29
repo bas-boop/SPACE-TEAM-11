@@ -27,8 +27,12 @@ public class Node : MonoBehaviour
 
         if (GameObject.Find("Player").GetComponent<ToggleBuildOff>().codeIsOn == true)
         {
-            GameObject turretToBuild = BuildManger.instance.GetTurretToBuild();
-            turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset, transform.rotation);
+            if (GameObject.Find("Gold Amount").GetComponent<Money>().money >= 100)
+            {
+                GameObject turretToBuild = BuildManger.instance.GetTurretToBuild();
+                turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset, transform.rotation);
+                GameObject.Find("Gold Amount").GetComponent<Money>().money -= 100;
+            }
         }
     }
 

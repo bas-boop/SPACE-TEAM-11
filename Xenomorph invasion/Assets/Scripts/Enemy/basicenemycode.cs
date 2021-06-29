@@ -9,8 +9,8 @@ public class basicenemycode : MonoBehaviour
     Player_Health PH;
     
     private int damage = 1;
-    public int health = 0;
-    private float speed = 30;
+    public float health = 0f;
+    private float speed = 40;
 
     //private float waitTime;
     //private float startwaitTime = 5;
@@ -25,6 +25,7 @@ public class basicenemycode : MonoBehaviour
     private int index = 0;
     private int y = 0;
     private int location;
+    public string x = ("Banana");
 
     //public Money money;
     
@@ -124,7 +125,7 @@ public class basicenemycode : MonoBehaviour
         PH.TakeDamage(1);
     }
 
-    public void TakeDamage(int y)
+    public void TakeDamage(float y)
     {
         health -= y;
         if (health <= 0)
@@ -135,7 +136,8 @@ public class basicenemycode : MonoBehaviour
 
     public void Die()
     {
-        //money.Increase(worth);
+        GameObject.Find("Gold Amount").GetComponent<Money>().money += 5;
         Destroy(gameObject);
+        Debug.Log(x);
     }
 }

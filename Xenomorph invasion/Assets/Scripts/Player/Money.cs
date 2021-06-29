@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Money : MonoBehaviour
 {
     [SerializeField]
-    private int money = 0;
+    public int money = 0;
 
     [SerializeField]
     private int startingMoney = 100;
@@ -15,6 +15,11 @@ public class Money : MonoBehaviour
     private Text moneyAmountText;
 
     private void Start()
+    {
+        money = startingMoney;
+    }
+
+    private void Update()
     {
         moneyAmountText.text = money + "$";
     }

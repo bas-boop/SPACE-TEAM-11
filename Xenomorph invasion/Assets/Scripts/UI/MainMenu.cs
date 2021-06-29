@@ -5,20 +5,31 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    PauseMenu pauseMenu;
+
     public void PlayGame()
     {
         SceneManager.LoadScene("Level 0.1");
     }
-    
-    public static void CallOptions()
+
+    private void Awake()
+    {
+        pauseMenu = GameObject.FindGameObjectWithTag("PauseMenu").GetComponent<PauseMenu>();
+        Debug.Log(pauseMenu.name);
+    }
+
+    /*public static void CallOptions()
     {
         SceneManager.LoadScene("OptionsMenu");
-    }
+    }*/
 
     public void ResumeTime()
     {
         Time.timeScale = 1f;
-        GetComponent<PauseMenu>().OptionsEnabled = false;
+        if(pauseMenu != null)
+        {
+            pauseMenu.OptionsEnabled = false;
+        }
     }
 
     public void ExitGame()

@@ -7,7 +7,7 @@ public class Turret : MonoBehaviour
     private basicenemycode targetEnemy;
 
     [Header("General")]
-    public float range = 25f;
+    public float range = 0f;
 
     [Header("Use Bullets (deafault)")]
     public GameObject bulletPrefab;
@@ -100,7 +100,7 @@ public class Turret : MonoBehaviour
 
     void Laser()
     {
-        targetEnemy.TakeDamage(1);
+        targetEnemy.TakeDamage(0.25f);
 
         if (!lineRenderer.enabled)
         {

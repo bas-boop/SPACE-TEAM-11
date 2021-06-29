@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public int damage = 40;
+    public int damage = 0;
     private float speed = 30f;
     private Transform target;
     private basicenemycode changeEnemyStats;

@@ -1106,6 +1106,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6b351c3d6548c44449307cbf69d49f3c, type: 3}
   m_PrefabInstance: {fileID: 1778712097}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &187611158
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 187611159}
+  m_Layer: 0
+  m_Name: MoveTo1 (13)
+  m_TagString: Untagged
+  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &187611159
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187611158}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 80, y: 1, z: -35.14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 390705593}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &215701036
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1480,6 +1510,7 @@ Transform:
   - {fileID: 1671396205}
   - {fileID: 841637898}
   - {fileID: 1140415990}
+  - {fileID: 187611159}
   m_Father: {fileID: 1626409173}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1898,6 +1929,10 @@ PrefabInstance:
       propertyPath: movetospots.Array.data[12]
       value: 
       objectReference: {fileID: 1140415990}
+    - target: {fileID: -4314125188185891255, guid: dada59bca322ef4449d94d4abc19999f, type: 3}
+      propertyPath: movetospots.Array.data[13]
+      value: 
+      objectReference: {fileID: 187611159}
     - target: {fileID: 365405317284120100, guid: dada59bca322ef4449d94d4abc19999f, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -2533,7 +2568,7 @@ MonoBehaviour:
   m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.25
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -2651,8 +2686,8 @@ RectTransform:
   m_Father: {fileID: 683067065}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.24992499, y: 0}
-  m_AnchorMax: {x: 0.24992499, y: 1}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3495,9 +3530,9 @@ MonoBehaviour:
   - waveName: Wave 1
     DifferentEnemies:
     - spawnenemy: {fileID: 2122873300}
-      noOfEnemies: 20
+      noOfEnemies: 8
     - spawnenemy: {fileID: 63268166}
-      noOfEnemies: 20
+      noOfEnemies: 8
     - spawnenemy: {fileID: 2122873300}
       noOfEnemies: 4
     - spawnenemy: {fileID: 63268166}
@@ -3506,25 +3541,25 @@ MonoBehaviour:
   - waveName: Wave 2
     DifferentEnemies:
     - spawnenemy: {fileID: 63268166}
-      noOfEnemies: 6
+      noOfEnemies: 9
     - spawnenemy: {fileID: 2122873300}
       noOfEnemies: 2
     - spawnenemy: {fileID: 63268166}
-      noOfEnemies: 2
+      noOfEnemies: 10
     spawnInterval: 2
   - waveName: Wave 3
     DifferentEnemies:
     - spawnenemy: {fileID: 2122873300}
       noOfEnemies: 10
     - spawnenemy: {fileID: 63268166}
-      noOfEnemies: 50
+      noOfEnemies: 20
     spawnInterval: 0.1
   - waveName: Wave 4
     DifferentEnemies:
     - spawnenemy: {fileID: 2122873300}
-      noOfEnemies: 10
+      noOfEnemies: 20
     - spawnenemy: {fileID: 63268166}
-      noOfEnemies: 50
+      noOfEnemies: 25
     spawnInterval: 0.1
   - waveName: Wave 5
     DifferentEnemies:
@@ -3536,9 +3571,9 @@ MonoBehaviour:
   - waveName: Wave 6
     DifferentEnemies:
     - spawnenemy: {fileID: 2122873300}
-      noOfEnemies: 10
+      noOfEnemies: 30
     - spawnenemy: {fileID: 63268166}
-      noOfEnemies: 50
+      noOfEnemies: 30
     spawnInterval: 0.1
   - waveName: Wave 7
     DifferentEnemies:
@@ -3550,7 +3585,7 @@ MonoBehaviour:
   - waveName: Wave 8
     DifferentEnemies:
     - spawnenemy: {fileID: 2122873300}
-      noOfEnemies: 10
+      noOfEnemies: 40
     - spawnenemy: {fileID: 63268166}
       noOfEnemies: 50
     spawnInterval: 0.1
@@ -4156,7 +4191,7 @@ GameObject:
   - component: {fileID: 1114723647}
   m_Layer: 5
   m_Name: PauseTab
-  m_TagString: Untagged
+  m_TagString: PauseMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4267,7 +4302,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1139223152}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 80, y: 0, z: -40}
+  m_LocalPosition: {x: 80, y: 0, z: -42.82}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1626409173}
@@ -5313,8 +5348,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af9cdca8dc12bf46a4aac178809519a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 100
-  startingMoney: 100
+  money: 0
+  startingMoney: 250
   moneyAmountText: {fileID: 1335701806}
 --- !u!1 &1268817621
 GameObject:
@@ -6395,6 +6430,14 @@ PrefabInstance:
       propertyPath: gradient.atime0
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8452218243229140239, guid: 86bbafd2d149f9f4da6ee3998029783f, type: 3}
+      propertyPath: gradient.key1.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452218243229140239, guid: 86bbafd2d149f9f4da6ee3998029783f, type: 3}
+      propertyPath: gradient.key0.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8452218243564382404, guid: 86bbafd2d149f9f4da6ee3998029783f, type: 3}
       propertyPath: m_Color.r
       value: 1
@@ -6410,7 +6453,7 @@ PrefabInstance:
     - target: {fileID: 8452218243564382404, guid: 86bbafd2d149f9f4da6ee3998029783f, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 7cd1c0c422d427142a96254d6c96f371, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 8452218243564382405, guid: 86bbafd2d149f9f4da6ee3998029783f, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -6875,6 +6918,10 @@ PrefabInstance:
       propertyPath: movetospots.Array.data[12]
       value: 
       objectReference: {fileID: 1140415990}
+    - target: {fileID: -4314125188185891255, guid: dada59bca322ef4449d94d4abc19999f, type: 3}
+      propertyPath: movetospots.Array.data[13]
+      value: 
+      objectReference: {fileID: 187611159}
     - target: {fileID: 365405317284120100, guid: dada59bca322ef4449d94d4abc19999f, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -7194,7 +7241,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.24992499, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
